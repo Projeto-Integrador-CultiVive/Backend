@@ -19,6 +19,16 @@ public class Categorias {
 	@NotBlank(message = "O atributo texto é obrigatório!")
 	@Size(min = 3, max = 100, message = "O atributo tipo deve possuir no min 3 e no max 100 caracteres")
 	private String tipo;
+	
+	private String descricao;
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
 
 	public Long getId() {
 		return id;
